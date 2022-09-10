@@ -28,8 +28,7 @@ void sub_handler(stack_t **stack, unsigned int line_number)
 	{
 		dprintf(STDERR_FILENO, MALLOC_FAIL);
 		free_all(1);
-         	exit(EXIT_FAILURE);
-
+		exit(EXIT_FAILURE);
 	}
 }
 

@@ -44,9 +44,8 @@ void monty(args_t *args)
 		if (!code_func)
 		{
 			dprintf(STDERR_FILENO, UNKNOWN, args->line_number, data.words[0]);
-		        free_all(1);
-	        	exit(EXIT_FAILURE);
-
+			free_all(1);
+			exit(EXIT_FAILURE);
 		}
 		code_func(&(data.stack), args->line_number);
 		free_all(0);
